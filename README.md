@@ -4,7 +4,7 @@ Scrapes tweets and and performs Emotional analysis on them.
 # Design
 app2.py holds the Flask application for the root direcory of the webpage
 
-app.py holds the dashboard for the live twitter treamimng.
+app.py holds the dashboard for the live twitter streaming.
 
 emotionalanalysis.py is the python file which has source code for predicting the emotions,
 twitterscrape.py is the python file for the source code to handle att twitter related operations.
