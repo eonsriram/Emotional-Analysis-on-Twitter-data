@@ -6,7 +6,6 @@ attrs==19.3.0
 autoviml==0.1.639
 backcall==0.1.0
 beautifulsoup4==4.9.1
-bleach==3.1.1
 boto==2.49.0
 boto3==1.13.12
 botocore==1.16.12
