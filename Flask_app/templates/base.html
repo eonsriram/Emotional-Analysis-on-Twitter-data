@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      q,
+      blockquote {
+        quotes: "“" "”" "‘" "’";
+        font-style: italic;
+      }
+
+      q:before,
+      blockquote:before {
+        content: open-quote;
+      }
+
+      q:after,
+      blockquote:after {
+        content: close-quote;
+      }
+
+      q:before,
+      q:after,
+      blockquote:before,
+      blockquote:after {
+        color: deeppink;
+        font-size: 1.2em;
+      }
+
+      blockquote {
+        margin-left: 0;
+        padding-left: 1em;
+        border-left: 5px solid rgb(0, 195, 255);
+      }
+
+      textarea:hover,
+      input:hover,
+      textarea:active,
+      input:active,
+      textarea:focus,
+      input:focus,
+      button:focus,
+      button:active,
+      button:hover,
+      label:focus,
+      .btn:active,
+      .btn.active {
+        outline: 0px !important;
+        -webkit-appearance: none;
+        box-shadow: none !important;
+      }
+      .form_text {
+        color: black;
+        font-size: 20px;
+        text-align: left;
+        border-bottom-width: thick;
+        border-bottom-color: rgb(0, 195, 255);
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        outline: none !important;
+        display: inline-block !important;
+        width: 130px;
+
+        
+
+      }
+      hr.new1 {
+        border-top: 1px solid rgb(0, 195, 255);
+        }
+
+    </style>
+    <title>Emotional Analysis</title>
+  </head>
+  <body>
+<!--
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul class="flashes">
+      {% for message in messages %}
+      <li class="color: red;">{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+-->
+    {% block body %} {% endblock %}
+  </body>
+</html>

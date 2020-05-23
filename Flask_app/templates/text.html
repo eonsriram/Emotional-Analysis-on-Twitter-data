@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+
+<br>
+<div class="container">
+    <h2 class="display-4 text-left text-secondary">Text Analysis</h2><br>
+    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+      <br />
+
+
+      <form class="form-group" action="{{ url_for('protext') }}" method="POST" autocomplete="off">
+        <span class="ml-3 text-muted">Enter the Text that needs to be analysed for the emotion: </span><br><br>
+        <input
+          class="form-control text-input demo-input-field"
+          name="senttext"
+          type="textbox"
+          required
+        /><br />
+
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        {% for message in messages %}
+        <!--<p class="text-muted"><i>{{message}}</i></p>-->
+        <p><i>{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+
+
+        <br />
+        <div class="text-left mr-5">
+          <input
+            style="color: rgb(255, 255, 255); background-color: rgb(0, 195, 255);"
+            class="btn"
+            type="submit"
+            name="Submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+
+
+
+
+
+
+
+
+
+      <!--
+      <h4> <p class="text-center text-muted"> "I'm a Greek, who lives upon the world of Jigsaw." </p> </h4><br><br>
+
+        <br><br><br><br>
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        {% for message in messages %}
+        <p class="text-muted"><i>{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+        
+       <div class="m-auto">
+        <form class="form-group" action="{{ url_for('pro3') }}" method="POST" autocomplete="off">
+          <span class="ml-3 text-muted">Enter your answer: </span>
+          <input
+            class="form_text ml-1 form-control"
+            name="Answer"
+            type="text"
+            required
+          /><br />
+          <br />
+          <div class="text-right mr-5">
+            <input
+              style="color: rgb(255, 255, 255); background-color: rgb(0, 195, 255);"
+              class="btn"
+              type="submit"
+              name="Submit"
+              value="Submit"
+            />
+          </div>
+        </form><br><br><br><br><br>
+        
+        <p class="text-right text-muted"><a href="https://www.wikipedia.org/" target="_blank">If in doubt, use WIKI</a> </p>
+        <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+</div>
+
+-->
+
+{% endblock %}  

@@ -1,0 +1,36 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>WELCOME TO THE 2ND ROUND
+        <br>VIRTUAL TREASURE HUNT
+    </h1>
+    <a href = "{{url_for('inst')}}"> INSTRUCTIONS</a>
+</body>
+</html>
+
+-->
+
+
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<div class="container">
+<h3 class="text-center text-muted"><u>WELCOME TO THE SECOND ROUND </u>   </h3><br><br><br>
+<h1 class="text-center text-muted display-4">VIRTUAL TREASURE HUNT!!!!</h1>
+<hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+
+<br><br>
+
+<br><br><br><br><br><br>
+<div class="text-center">
+<a href = "{{url_for('inst')}}"><h4> Proceed to Instructions..</h4></a><br>
+<a href = "{{url_for('eahome')}}"><h4> NEW</h4></a>
+</div>
+</div>
+{% endblock %}

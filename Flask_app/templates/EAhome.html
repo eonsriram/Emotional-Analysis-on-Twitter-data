@@ -1,0 +1,51 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruction</title>
+</head>
+<body>
+    <h1>INSTRUCTION</h1>
+    <ul>
+        <li>The number of attempts to a question are <i>limited</i>, so please enter if you are confident. </li>
+        <li>There are no errors in grammar or vocab. </li>
+        <li>Utilize any online resource for your Hunt!</li>
+        <li>The answers are case insensitive. </li>
+        <li>Get your pens and papers ready. </li>
+        
+    </ul>
+
+
+
+    <a href = "{{url_for('q1')}}"> PLAY</a>
+</body>
+</html>
+
+-->
+
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<div class="container">
+<h1 class="text-left text-muted display-4">Welcome to Emotional Analysis.</h1>
+<hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+<br><br>
+<ul>
+    <li class="text-muted"><a href="{{url_for('realtime')}}">Live Stream Twitter Analysis</a> </li>
+    <li class="text-muted"><a href="{{url_for('text')}}">Analysis on Text</a> </li>
+    <!--
+    <li class="text-muted">Utilize any online resource for your Hunt!</li>
+    <li class="text-muted">The answers are case insensitive. </li>
+    <li class="text-muted">It's recommended that you use Google as your search engine. </li>
+    <li class="text-muted">Get your pen and papers ready. </li>
+    -->
+
+</ul>
+<br><br><br>
+<div class="text-right">
+<a href = "{{url_for('q1')}}"><h3> PLAY</h3></a>
+</div>
+</div>
+{% endblock %}
